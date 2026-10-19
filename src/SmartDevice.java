@@ -1,6 +1,8 @@
+// abstract so you cant make a plain SmartDevice, only specific ones
 public abstract class SmartDevice {
     private String brand;
     private String model;
+    // no body here, each device decides what its main action is
     public abstract void performMainAction();
 
     public SmartDevice(String brand, String model) {

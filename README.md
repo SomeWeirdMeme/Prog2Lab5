@@ -1,18 +1,20 @@
-## Getting Started
+# Programming 2 - Lab 5
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Abstract classes and interfaces in Java, using a small smart device system.
 
-## Folder Structure
+## Classes
 
-The workspace contains two folders by default, where:
+- `SmartDevice` - abstract base class with brand and model
+- `SmartPhone` - extends `SmartDevice`, implements `Chargeable` and `Connectable`
+- `SmartSpeaker` - extends `SmartDevice`, implements `Connectable`
+- `Chargeable` - interface with `charge()`
+- `Connectable` - interface with `connectToWiFi()`
+- `Main` - creates the devices and tests `testCharging()`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Run
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```
+cd src
+javac *.java
+java Main
+```

@@ -1,10 +1,12 @@
 public class Main {
 
+    // takes anything that implements Chargeable
     public static void testCharging(Chargeable device) {
         device.charge();
     }
 
     public static void main(String[] args) {
+        // parent type reference, child object
         SmartDevice d1 = new SmartPhone("Apple", "iPhone");
         SmartDevice d2 = new SmartSpeaker("Google", "Nest");
 

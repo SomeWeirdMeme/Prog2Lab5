@@ -1,3 +1,4 @@
+// extends one class, implements two interfaces
 public class SmartPhone extends SmartDevice implements Chargeable, Connectable {
 
     public SmartPhone(String brand, String model) {

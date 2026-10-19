@@ -1,3 +1,4 @@
+// not Chargeable, so no charge() here
 public class SmartSpeaker extends SmartDevice implements Connectable {
 
     public SmartSpeaker(String brand, String model) {
